@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Link external style sheet-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>Contact</title>
+</head>
+
+<!--Navigation bar-->
+<div id="nav">
+</div>
+
+<!--Header-->
+<div class="header">
+    <div class="headertext">
+        <h2>Quyen Huynh</h2>
+    </div>
+</div>
+
+<!--Using table to align links-->
+<table>
+    <tr>
+        <td>
+            <a href="index.html">About</a>
+        </td>
+        <td>
+            <div class="verticalDivider"></div>
+        </td>
+        <td>
+            <a href="portfolio.html">Portfolio</a>
+        </td>
+        <td>
+            <div class="verticalDivider"></div>
+        </td>
+        <td>
+            <a href="contact.html">Contact</a>
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<body>
+    <!--Container div start-->
+    <div id="container">
+
+        <div id="contact">
+            <h2>Contact</h2>
+        </div>
+
+        <!--create line without using hr tag-->
+        <div id="line">
+        </div>
+
+        <div id="textforms">
+            <br>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" Name="name" id="name" />
+            <br>
+
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" Name="email" id="email" />
+            <br>
+
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea name="message" maxlength="200" id="message">
+        </textarea>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="submit">
+            <font size="3">Submit</font>
+        </div>
+
+    </div>
+    <!--End container div-->
+</body>
+
+
+<footer>
+    <div class="footer">
+        <div id="fteal">
+        </div>
+        <div id="fgray">
+            <font size="1">Copyright &copy;</font>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<style>
+    #contact {
+        position: relative;
+        top: 0px;
+        color: cadetblue;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+    }
+
+    #textforms {
+        color: #777777;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #message {
+        width: 100%;
+        height: 150px;
+    }
+
+    #submit {
+        background-color: cadetblue;
+        padding: 8px 20px 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        float: left;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        border-right: 1px solid rgba(95, 158, 160, 0.788);
+        border-bottom: 1px solid rgba(95, 158, 160, 0.788);
+    }
+
+    @media screen and (max-width: 640px) {
+        #submit {
+            bottom: -85px;
+        }
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 768px) {
+        #submit {
+            bottom: -35px;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 980px) {
+        #submit {
+            bottom: -15px;
+        }
+    }
+</style>
+
+</html>

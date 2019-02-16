@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Link external style sheet-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>Portfolio</title>
+</head>
+
+<!--Navigation bar-->
+<div id="nav">
+</div>
+
+<!--Header-->
+<div class="header">
+    <div class="headertext">
+        <h2>Quyen Huynh</h2>
+    </div>
+</div>
+
+<!--Using table to align links-->
+<table>
+    <tr>
+        <td>
+            <a href="index.html">About</a>
+        </td>
+        <td>
+            <div class="verticalDivider"></div>
+        </td>
+        <td>
+            <a href="portfolio.html">Portfolio</a>
+        </td>
+        <td>
+            <div class="verticalDivider"></div>
+        </td>
+        <td>
+            <a href="contact.html">Contact</a>
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<body>
+    <!--Container div start-->
+    <div id="container">
+
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+        </div>
+
+        <!--create line without using hr tag-->
+        <div id="line">
+        </div>
+        <br>
+
+        <!--images-->
+        <img src="assets/images/placeholdercat.jpg" height="200px"></img>
+        <img src="assets/images/placeholderorchid.jpg" height="200px" id="orchid"></img>
+
+        <br>
+        <br>
+
+        <img src="assets/images/placeholderrunway.jpg" height="200px"></img>
+        <img src="assets/images/placeholdersport.jpg" height="200px" id="sport"></img>
+
+        <br>
+        <br>
+
+        <img src="assets/images/placeholderipad.jpg" height="200px"></img>
+    </div>
+    <!--End container div-->
+</body>
+
+<div class="header3">
+    <h3 id="hangman">
+        <div class="header3text">Hangman</div>
+    </h3>
+    <h3 id="rpg">
+        <div class="header3text">RPG Game</div>
+    </h3>
+    <h3 id="trivia">
+        <div class="header3text">Trivia Game</div>
+    </h3>
+    <h3 id="widget">
+        <div class="header3text2">Rutgers Info Widget</div>
+    </h3>
+    <h3 id="rps">
+        <div class="header3text2">Rock Paper Scissors</div>
+    </h3>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer>
+    <div class="footer">
+        <div id="fteal">
+        </div>
+        <div id="fgray">
+            <font size="1">Copyright &copy;</font>
+        </div>
+    </div>
+</footer>
+
+<style>
+    #portfolio {
+        position: relative;
+        top: 0px;
+        color: cadetblue;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+    }
+
+    img {
+        text-align: left;
+        padding: 15px;
+        z-index: 1;
+    }
+
+    h3 {
+        color: white;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        background-color: cadetblue;
+        padding: 10px 33px 10px 32px;
+        text-align: center;
+        width: 16%;
+        font-weight: normal;
+        z-index: 0;
+    }
+
+    #hangman {
+        position: absolute;
+        top: 350px;
+        left: 176px;
+    }
+
+    #rpg {
+        position: absolute;
+        top: 350px;
+        left: 477px;
+    }
+
+    #trivia {
+        position: absolute;
+        top: 600px;
+        left: 176px;
+    }
+
+    #widget {
+        position: absolute;
+        top: 600px;
+        left: 477px;
+    }
+
+    #rps {
+        position: absolute;
+        top: 855px;
+        left: 176px;
+    }
+
+    @media screen and (max-width: 640px) {
+        img {
+            width: 95%;
+            height: auto;
+        }
+
+        h3 {
+            width: 68%;
+            height: 50px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        /*Aligns the text inside header containers for short labels*/
+        .header3 .header3text {
+            position: absolute;
+            bottom: 25px;
+            left: 185px;
+        }
+
+        /*Aligns the text inside header containers for longer labels*/
+        .header3 .header3text2 {
+            position: absolute;
+            bottom: 25px;
+            left: 135px;
+        }
+
+        #hangman {
+            position: absolute;
+            left: 67px;
+            top: 530px;
+        }
+
+        #rpg {
+            position: absolute;
+            left: 67px;
+            top: 920px;
+        }
+
+        #trivia {
+            position: absolute;
+            left: 67px;
+            top: 1320px;
+        }
+
+        #widget {
+            position: absolute;
+            left: 67px;
+            top: 1700px;
+        }
+
+        #rps {
+            position: absolute;
+            left: 67px;
+            top: 2120px;
+        }
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 768px) {
+
+        h3 {
+            width: 27.4%;
+        }
+
+        #hangman {
+            position: absolute;
+            left: 77px;
+            top: 385px;
+        }
+
+        #rpg {
+            position: absolute;
+            left: 378px;
+            top: 385px;
+        }
+
+        #trivia {
+            position: absolute;
+            left: 77px;
+            top: 630px;
+        }
+
+        #widget {
+            position: absolute;
+            left: 378px;
+            top: 630px;
+        }
+
+        #rps {
+            position: absolute;
+            left: 77px;
+            top: 880px;
+        }
+
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 980px) {
+        img {
+            width: 44%;
+            height: auto;
+        }
+
+        h3 {
+            width: 21.32%;
+            height: 25px;
+        }
+
+        #hangman {
+            position: absolute;
+            left: 84px;
+            top: 345px;
+        }
+
+        #rpg {
+            position: absolute;
+            left: 384.5px;
+            top: 345px;
+        }
+
+        #trivia {
+            position: absolute;
+            left: 84px;
+            top: 590px;
+        }
+
+        #widget {
+            position: absolute;
+            left: 384.5px;
+            top: 590px;
+        }
+
+        #rps {
+            position: absolute;
+            left: 84px;
+            top: 840px;
+        }
+
+    }
+</style>
+
+</html>
